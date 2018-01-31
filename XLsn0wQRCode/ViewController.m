@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XLsn0wQRcodeScaner.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    XLsn0wQRcodeScaner *scaner = [XLsn0wQRcodeScaner new];
+    [self.navigationController pushViewController:scaner animated:true];
 }
 
 

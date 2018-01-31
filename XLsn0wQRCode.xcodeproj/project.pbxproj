@@ -78,8 +78,8 @@
 				CDD4F859200478C100ACCA1E /* AppDelegate.m */,
 				CDD4F85B200478C100ACCA1E /* ViewController.h */,
 				CDD4F85C200478C100ACCA1E /* ViewController.m */,
-				CDD4F877200478CF00ACCA1E /* XLsn0wLogoQRCoder */,
 				CDD4F86E200478CE00ACCA1E /* XLsn0wQRcodeScaner */,
+				CDD4F877200478CF00ACCA1E /* XLsn0wLogoQRCoder */,
 				CDD4F85E200478C100ACCA1E /* Main.storyboard */,
 				CDD4F861200478C100ACCA1E /* Assets.xcassets */,
 				CDD4F863200478C100ACCA1E /* LaunchScreen.storyboard */,
@@ -335,7 +335,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNZCYC8M4N;
 				INFOPLIST_FILE = XLsn0wQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.XLsn0wQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,7 +350,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YNZCYC8M4N;
 				INFOPLIST_FILE = XLsn0wQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.XLsn0wQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -11,10 +11,12 @@ CGFloat const ZFScanRatio = 0.68f;
 #define kScreen [UIScreen mainScreen].bounds.size
 
 @interface MaskView : UIView
+
 //重设UI的frame
 - (void)resetFrame;
 //移除动画
 - (void)removeAnimation;
+
 @end
 
 @interface MaskView ()
@@ -299,7 +301,7 @@ CGFloat const ZFScanRatio = 0.68f;
 @interface XLsn0wQRcodeScaner ()<AVCaptureMetadataOutputObjectsDelegate>
 
 /** 输入输出的中间桥梁 */
-@property (nonatomic, strong) AVCaptureSession * session;
+@property (nonatomic, strong) AVCaptureSession *session;
 /** 相机图层 */
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer * previewLayer;
 /** 扫描支持的编码格式的数组 */
