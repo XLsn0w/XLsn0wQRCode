@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD39045A2021C43E00C2FBEE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3904592021C43E00C2FBEE /* View.xib */; };
+		CD39045F2021C82600C2FBEE /* ScanCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD39045B2021C82600C2FBEE /* ScanCodeManager.m */; };
+		CD3904602021C82600C2FBEE /* ReplicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD39045C2021C82600C2FBEE /* ReplicatorAnimation.m */; };
+		CD3904632021C83A00C2FBEE /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3904622021C83A00C2FBEE /* MaskView.m */; };
+		CD3904652021C86E00C2FBEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3904642021C86E00C2FBEE /* ViewController.m */; };
 		CDD4F85A200478C100ACCA1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD4F859200478C100ACCA1E /* AppDelegate.m */; };
-		CDD4F85D200478C100ACCA1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD4F85C200478C100ACCA1E /* ViewController.m */; };
 		CDD4F860200478C100ACCA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD4F85E200478C100ACCA1E /* Main.storyboard */; };
 		CDD4F862200478C100ACCA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD4F861200478C100ACCA1E /* Assets.xcassets */; };
 		CDD4F865200478C100ACCA1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD4F863200478C100ACCA1E /* LaunchScreen.storyboard */; };
@@ -23,11 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD3904592021C43E00C2FBEE /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		CD39045B2021C82600C2FBEE /* ScanCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanCodeManager.m; sourceTree = "<group>"; };
+		CD39045C2021C82600C2FBEE /* ReplicatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorAnimation.m; sourceTree = "<group>"; };
+		CD39045D2021C82600C2FBEE /* ScanCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanCodeManager.h; sourceTree = "<group>"; };
+		CD39045E2021C82600C2FBEE /* ReplicatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorAnimation.h; sourceTree = "<group>"; };
+		CD3904612021C83A00C2FBEE /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		CD3904622021C83A00C2FBEE /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
+		CD3904642021C86E00C2FBEE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CDD4F855200478C100ACCA1E /* XLsn0wQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD4F858200478C100ACCA1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDD4F859200478C100ACCA1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDD4F85B200478C100ACCA1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDD4F85C200478C100ACCA1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CDD4F85F200478C100ACCA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDD4F861200478C100ACCA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD4F864200478C100ACCA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,7 +88,14 @@
 				CDD4F858200478C100ACCA1E /* AppDelegate.h */,
 				CDD4F859200478C100ACCA1E /* AppDelegate.m */,
 				CDD4F85B200478C100ACCA1E /* ViewController.h */,
-				CDD4F85C200478C100ACCA1E /* ViewController.m */,
+				CD3904642021C86E00C2FBEE /* ViewController.m */,
+				CD3904592021C43E00C2FBEE /* View.xib */,
+				CD39045D2021C82600C2FBEE /* ScanCodeManager.h */,
+				CD39045B2021C82600C2FBEE /* ScanCodeManager.m */,
+				CD39045E2021C82600C2FBEE /* ReplicatorAnimation.h */,
+				CD39045C2021C82600C2FBEE /* ReplicatorAnimation.m */,
+				CD3904612021C83A00C2FBEE /* MaskView.h */,
+				CD3904622021C83A00C2FBEE /* MaskView.m */,
 				CDD4F86E200478CE00ACCA1E /* XLsn0wQRcodeScaner */,
 				CDD4F877200478CF00ACCA1E /* XLsn0wLogoQRCoder */,
 				CDD4F85E200478C100ACCA1E /* Main.storyboard */,
@@ -182,6 +200,7 @@
 				CDD4F87B200478CF00ACCA1E /* QRCodeScanLine@2x.png in Resources */,
 				CDD4F87E200478CF00ACCA1E /* ScanQR4@2x.png in Resources */,
 				CDD4F87D200478CF00ACCA1E /* ScanQR1@2x.png in Resources */,
+				CD39045A2021C43E00C2FBEE /* View.xib in Resources */,
 				CDD4F862200478C100ACCA1E /* Assets.xcassets in Resources */,
 				CDD4F87F200478CF00ACCA1E /* ScanQR2@2x.png in Resources */,
 				CDD4F87C200478CF00ACCA1E /* ScanQR3@2x.png in Resources */,
@@ -196,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD4F85D200478C100ACCA1E /* ViewController.m in Sources */,
+				CD39045F2021C82600C2FBEE /* ScanCodeManager.m in Sources */,
 				CDD4F868200478C100ACCA1E /* main.m in Sources */,
+				CD3904652021C86E00C2FBEE /* ViewController.m in Sources */,
+				CD3904602021C82600C2FBEE /* ReplicatorAnimation.m in Sources */,
+				CD3904632021C83A00C2FBEE /* MaskView.m in Sources */,
 				CDD4F85A200478C100ACCA1E /* AppDelegate.m in Sources */,
 				CDD4F87A200478CF00ACCA1E /* XLsn0wQRcodeScaner.m in Sources */,
 				CDD4F880200478CF00ACCA1E /* XLsn0wLogoQRCoder.m in Sources */,
