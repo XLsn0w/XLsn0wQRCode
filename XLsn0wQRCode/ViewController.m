@@ -2,7 +2,7 @@
 #import "ViewController.h"
 #import "ScanCodeManager.h"
 #import <AVFoundation/AVFoundation.h>
-#import "MaskView.h"
+
 #import "ReplicatorAnimation.h"
 
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
@@ -12,7 +12,8 @@
 
 
 @property (nonatomic, strong) AVCaptureSession *session;
-@property (nonatomic, strong) MaskView *maskView;
+
+
 @property (nonatomic, strong) UIImageView *rectImageView;
 
 @property (nonatomic, strong) UIButton *torchBtn; // 闪光灯按钮
@@ -49,8 +50,7 @@
 }
 
 - (void)initContent {
-    
-    [self.view addSubview:self.maskView];
+
     [self.view addSubview:self.rectImageView];
     [self.view addSubview:self.photoBtn];
     [self.view addSubview:self.torchBtn];
@@ -58,15 +58,7 @@
 
 - (void)startScanCode {
     
-    if ([self canOpenCamera]) {
-        __weak typeof(self) weakSelf = self;
-        [[ScanCodeManager manager] scanCodeWithType:ScanTypeQRCode|ScanTypeBarCode scanView:self.view scanRect:self.maskView.maskRect completeHandler:^(NSString *code) {
-            __strong typeof(self) strongSelf = weakSelf;
-            [strongSelf scanCodeSuccessWith:code];
-        }];
-    } else {
-        NSLog(@"不能访问相机");
-    }
+
 }
 
 #pragma mark - button action
@@ -132,16 +124,7 @@
         return NO;
     }
     return YES;
-}
 
-#pragma mark - 懒加载
-
-- (MaskView *)maskView {
-    if (!_maskView) {
-        _maskView = [[MaskView alloc] initWithFrame:self.view.bounds];
-        _maskView.maskRect = CGRectMake(40.f, 160.f, SCREEN_WIDTH-80.f, SCREEN_WIDTH-80.f);
-    }
-    return _maskView;
 }
 
 - (UIButton *)torchBtn {
@@ -162,13 +145,6 @@
     return _photoBtn;
 }
 
-- (UIImageView *)rectImageView {
-    if (!_rectImageView) {
-        _rectImageView = [[UIImageView alloc] initWithFrame:self.maskView.maskRect];
-        _rectImageView.image = [UIImage imageNamed:@"scan_rect"];
-    }
-    return _rectImageView;
-}
 
 - (void)dealloc {
     
